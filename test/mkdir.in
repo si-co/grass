@@ -1,0 +1,5 @@
+login Acidburn
+pass CrashOverride
+mkdir test
+rm test
+exit

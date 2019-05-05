@@ -1,0 +1,21 @@
+# Missing login command
+pass CrashOverride
+
+# Wrong password
+login Acidburn
+pass whateverman
+
+# login should reset after failed attempt
+pass CrashOverride
+
+# Correct login
+login Acidburn
+pass CrashOverride
+
+# Can't do nested logins
+login b
+
+# Missing login command after login
+pass b
+
+exit

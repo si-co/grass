@@ -1,0 +1,22 @@
+
+# cd to nonexisting dir
+Error : directory does not exist
+
+# cd to existing dir
+
+# cd to nonexisting dir
+Error : directory does not exist
+
+# cd to existing dir
+
+# cd up and down several levels
+
+# cd out of bounds
+Error : invalid path
+Error : invalid path
+
+# rm nonexisting directory
+Error : directory does not exist
+
+# cd deleted directory
+Error : directory does not exist

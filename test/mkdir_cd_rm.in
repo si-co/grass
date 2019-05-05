@@ -1,0 +1,40 @@
+login Acidburn
+pass CrashOverride
+
+# cd to nonexisting dir
+cd tmp
+
+# cd to existing dir
+mkdir tmp
+cd tmp
+
+# cd to nonexisting dir
+cd tmp2
+
+# cd to existing dir
+mkdir tmp2 
+cd tmp2
+
+# cd up and down several levels
+cd ../..
+cd tmp/tmp2
+
+# cd out of bounds (2x)
+cd ../../..
+cd ..
+cd ..
+cd ..
+
+# rm nonexisting directory
+rm tmp2
+
+# rm existing directories
+cd tmp
+rm tmp2
+cd ..
+rm tmp
+
+# cd deleted directory
+cd tmp
+
+exit

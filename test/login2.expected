@@ -1,0 +1,16 @@
+# Missing login command
+Error: call 'login' first
+
+# Wrong password
+Error : Wrong password
+
+# login should reset after failed attempt
+Error: call 'login' first
+
+# correct login
+
+# Can't do nested logins
+Error : User is already logged in
+
+# Missing login command after login
+Error : User is already logged in
