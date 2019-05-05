@@ -6,7 +6,7 @@
 * Arnaud Hennig, 237782, https://github.com/Kantus1511  
 
 ## Report
-The project's report is available in the `doc` folder.
+The project's report is in the exploits & report file.
 
 ## Testing
 To test the functionalities of client and server, perform the following operations.
