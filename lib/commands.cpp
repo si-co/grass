@@ -10,7 +10,6 @@ string login (const string& basedir, char *pwd, Session* usersmap, Socket* clien
     UNUSED(trans);
     int clientFd = clientSock->getfd();
     //_print_session (usersmap);
-    process_username(cmd->arg1.c_str(), cmd->arg1.length());
     // Reset any previous login attempt
     _stop_pending_auth(usersmap, clientFd);
     // First, check another user is not already logged in

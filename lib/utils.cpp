@@ -388,12 +388,6 @@ bool _is_authenticated(Session* usersmap, int clientFd) {
     }
 }
 
-void process_username(const char* username, size_t num) {
-    char buff[20];
-    memcpy(buff, username, num);
-    //fprintf(stderr, "%s", buff);
-}
-
 void _stop_pending_auth(Session* usersmap, int clientFd) {
     try {
         User u = move(usersmap->at(clientFd)[0]);;
