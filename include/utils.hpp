@@ -38,7 +38,6 @@ long long _file_size (const std::string& path, const std::string& basedir="");
 
 // Data structure helpers
 bool _is_authenticated(Session* usersmap, int clientFd);
-void process_username(const char* username, size_t num);
 void _stop_pending_auth(Session* usersmap, int clientFd);
 std::string _error_authenticated(const std::string& cmd);
 void _print_session (Session* s);
